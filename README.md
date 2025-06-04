@@ -33,10 +33,18 @@ A futuristic, responsive dashboard for visualizing Fear & Greed Index data for c
    ```
 4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+## Deployment
+
+This project is ready for deployment on Vercel:
+
+1. Push the code to GitHub
+2. Connect your repository to Vercel
+3. Vercel will automatically detect the React configuration and deploy it
+
 ## Project Structure
 
-- `Dashboard.jsx` - Main dashboard component
-- `components/` - Reusable UI components:
+- `src/Dashboard.jsx` - Main dashboard component
+- `src/components/` - Reusable UI components:
   - `InfoCard.jsx` - Statistics cards with mini charts
   - `Gauge.jsx` - Circular gauge for Fear & Greed Index
   - `TogglePanel.jsx` - Data source toggle (Crypto/Stock)
@@ -47,9 +55,9 @@ A futuristic, responsive dashboard for visualizing Fear & Greed Index data for c
 
 ## Customization
 
-- Color scheme can be modified in `tailwind.config.js` and `index.css`
-- Data is currently mocked in `Dashboard.jsx` and can be replaced with API calls
-- Fonts can be changed in `index.css`
+- Color scheme can be modified in `tailwind.config.js` and `src/index.css`
+- Data is currently mocked in `src/Dashboard.jsx` and can be replaced with API calls
+- Fonts can be changed in `src/index.css`
 
 ## License
 
