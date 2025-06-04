@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-dark-blue: #0D1B2A;
+  --accent-blue: #00BFFF;
+  --accent-yellow: #FDCB58;
+  --accent-orange: #FF7E5F;
+}
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', 'Exo', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-dark-blue);
+  color: white;
+}
+
+/* Glassmorphism effect */
+.backdrop-blur-md {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Neon glow effects */
+.glow-blue {
+  box-shadow: 0 0 10px 0 rgba(0, 191, 255, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.glow-blue:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 191, 255, 0.5);
+}
+
+.glow-yellow {
+  box-shadow: 0 0 10px 0 rgba(253, 203, 88, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.glow-yellow:hover {
+  box-shadow: 0 0 20px 0 rgba(253, 203, 88, 0.5);
+}
+
+.glow-orange {
+  box-shadow: 0 0 10px 0 rgba(255, 126, 95, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.glow-orange:hover {
+  box-shadow: 0 0 20px 0 rgba(255, 126, 95, 0.5);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1E3A5F;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-blue);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00a6dd;
+} 
